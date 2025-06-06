@@ -1,1 +1,268 @@
-Ку-ку!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Lysevych Oleksandr</title>
+	<meta name="language" content="en">
+	<meta name="theme-color" content="#ffffff" />
+	<meta name="description" content="Lysevych Oleksandr – personal website" />
+	<meta name="keywords" content="Lysevych, WildFox, Lysevych Oleksandr, WildFoxFamily, WildFoxEyes" />
+	<meta name="author" content="Lysevych Oleksandr" />
+	<meta name="copyright" content="© 2011–2025 Lysevych Oleksandr">
+	<meta name="robots" content="index, follow" />
+
+	<meta property="og:title" content="Lysevych Oleksandr" />
+	<meta property="og:description" content="Lysevych Oleksandr – personal website" />
+	<meta property="og:image" content="https://raw.githubusercontent.com/Lysevych/Lysevych/main/Lysevych-logo.webp" />
+	<meta property="og:url" content="https://Lysevych.net/" />
+	<meta property="og:type" content="website" />
+
+	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Lysevych/Lysevych/main/FavIcon-Lysevych.ico" />
+	<link rel="icon" type="image/png" sizes="96x96" href="https://raw.githubusercontent.com/Lysevych/Lysevych/main/FavIcon-96x96-Lysevych.png" />
+	<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Lysevych/Lysevych/main/Apple-Touch-Icon-Lysevych.png" />
+	<link rel="icon" type="image/png" sizes="192x192" href="https://raw.githubusercontent.com/Lysevych/Lysevych/main/Android-Chrome-192x192-Lysevych.png" />
+	<link rel="icon" type="image/png" sizes="512x512" href="https://raw.githubusercontent.com/Lysevych/Lysevych/main/Android-Chrome-512x512-Lysevych.png" />
+	<link rel="canonical" href="https://Lysevych.net/" />
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "Person",
+			"name": "Lysevych Oleksandr",
+			"url": "https://Lysevych.net/",
+			"image": "https://raw.githubusercontent.com/Lysevych/Lysevych/main/Android-Chrome-192x192-Lysevych.png",
+			"sameAs": [
+				"https://facebook.com/Lysevych/",
+				"https://instagram.com/Lysevych.Oleksandr/",
+				"https://linkedin.com/in/LysevychOleksandr/"
+			],
+			"description": "Personal website of Lysevych Oleksandr"
+		}
+	</script>
+
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			width: 100vw;
+			background-color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			font-family: Helvetica, Arial, Sans-Serif;
+		}
+
+		.tooltip {
+			position: fixed;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: clamp(250px, 30vw, 30vw);
+			display: inline-block;
+			z-index: 100;
+		}
+
+		.center-image {
+			width: 100%;
+			height: auto;
+			display: block;
+			user-select: none;
+			-webkit-user-drag: none;
+		}
+
+		.tooltip-text-main {
+			position: absolute;
+			top: 85%;
+			left: 50%;
+			transform: translateX(-50%);
+			color: #ffffff;
+			background: linear-gradient(45deg, #666666, #999999);
+			font-size: 15px;
+			text-align: center;
+			white-space: nowrap;
+			text-shadow: 0px 0px 10px #ffffff;
+			padding: 10px 10px;
+			border-radius: 10px;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.5s ease;
+			user-select: none;
+			z-index: 10;
+			visibility: visible;
+		}
+
+		.tooltip-text-main.visible {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.social-container {
+			position: fixed;
+			bottom: clamp(20px, 3vw, 3vw);
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			gap: clamp(20px, 1vw, 1vw);
+			user-select: none;
+		}
+
+		.social-icon {
+			width: clamp(50px, 3vw, 3vw);
+			filter: grayscale(100%);
+			user-select: none;
+			-webkit-user-drag: none;
+		}
+
+		.social-container a {
+			position: relative;
+			display: inline-block;
+		}
+
+		.tooltip-text-social {
+			position: absolute;
+			left: 50%;
+			bottom: calc(100% + 20px);
+			transform: translateX(-50%);
+			color: #ffffff;
+			background: linear-gradient(180deg, #999999, #666666);
+			font-size: 15px;
+			text-align: center;
+			white-space: nowrap;
+			text-shadow: 0px 0px 10px #ffffff;
+			padding: 10px 10px;
+			border-radius: 10px;
+			opacity: 0;
+			transition: opacity 0.5s ease;
+			pointer-events: none;
+			visibility: visible;
+		}
+
+		.tooltip-text-social.visible {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.tooltip-text-social::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-top: 10px solid #666666;
+		}
+
+		@media (hover: hover) and (pointer: fine) {
+			.social-container a:hover .tooltip-text-social {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main class="tooltip">
+		<img class="center-image" src="https://raw.githubusercontent.com/Lysevych/Lysevych/main/Lysevych-logo.webp" alt="Lysevych Oleksandr" />
+		<div class="tooltip-text-main" id="tooltip">by Lysevych Oleksandr<br>© 2011–2025</div>
+	</main>
+
+	<div class="social-container">
+		<a href="https://facebook.com/Lysevych/" aria-label="Facebook profile of Lysevych Oleksandr" target="_blank" rel="noopener noreferrer">
+			<img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="FaceBook" />
+			<span class="tooltip-text-social">Social media profile</span>
+		</a>
+		<a href="https://instagram.com/WildFoxEyes/" aria-label="Instagram profile of Lysevych Oleksandr" target="_blank" rel="noopener noreferrer">
+			<img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="InstaGram" />
+			<span class="tooltip-text-social">Photos</span>
+		</a>
+		<a href="https://linkedin.com/in/LysevychOleksandr/" aria-label="LinkedIn profile of Lysevych Oleksandr" target="_blank" rel="noopener noreferrer">
+			<img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" />
+			<span class="tooltip-text-social">Professional experience</span>
+		</a>
+	</div>
+
+	<script>
+		const tooltip = document.getElementById('tooltip');
+		const tooltipTrigger = document.querySelector('.tooltip');
+		const socialLinks = document.querySelectorAll('.social-container a');
+		let tooltipVisible = false;
+		let tooltipTimer;
+		let socialTooltipTimer;
+		const showTooltip = () => {
+			clearTimeout(tooltipTimer);
+			tooltip.classList.add('visible');
+			tooltipVisible = true;
+			tooltipTimer = setTimeout(hideTooltip, 10000);
+		};
+		const hideTooltip = () => {
+			tooltip.classList.remove('visible');
+			tooltipVisible = false;
+		};
+		const hideAllSocialTooltips = () => {
+			clearTimeout(socialTooltipTimer);
+			document.querySelectorAll('.tooltip-text-social.visible').forEach(el => {
+				el.classList.remove('visible');
+			});
+		};
+		tooltipTrigger.addEventListener('mouseenter', showTooltip);
+		tooltipTrigger.addEventListener('mouseleave', hideTooltip);
+		tooltipTrigger.addEventListener('touchstart', (e) => {
+			e.preventDefault();
+			tooltipVisible ? hideTooltip() : showTooltip();
+		});
+		socialLinks.forEach(link => {
+			const tooltip = link.querySelector('.tooltip-text-social');
+			link.addEventListener('touchstart', function(e) {
+				if (tooltip.classList.contains('visible')) return;
+				e.preventDefault();
+				hideAllSocialTooltips();
+				tooltip.classList.add('visible');
+				socialTooltipTimer = setTimeout(() => {
+					tooltip.classList.remove('visible');
+				}, 10000);
+			});
+		});
+		document.addEventListener('touchstart', function(e) {
+			const isTooltip = tooltipTrigger.contains(e.target);
+			const isSocial = e.target.closest('.social-container a');
+			if (!isTooltip) hideTooltip();
+			if (!isSocial) hideAllSocialTooltips();
+		});
+	</script>
+
+	<script>
+		let socialTooltipTimeout;
+		document.querySelectorAll('.social-container a').forEach(link => {
+			const tooltip = link.querySelector('.tooltip-text-social');
+			link.addEventListener('touchstart', function(e) {
+				if (tooltip.classList.contains('visible')) return;
+				e.preventDefault();
+				hideAllSocialTooltips();
+				tooltip.classList.add('visible');
+				socialTooltipTimeout = setTimeout(() => {
+					tooltip.classList.remove('visible');
+				}, 10000);
+			});
+		});
+
+		function hideAllSocialTooltips() {
+			clearTimeout(socialTooltipTimeout);
+			document.querySelectorAll('.tooltip-text-social.visible').forEach(el => {
+				el.classList.remove('visible');
+			});
+		}
+		document.addEventListener('touchstart', function(e) {
+			const isInside = e.target.closest('.social-container a');
+			if (!isInside) hideAllSocialTooltips();
+		});
+	</script>
+</body>
+
+</html>
