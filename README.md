@@ -1,6 +1,6 @@
 # Maryna Lysevych — Personal Website
 
-**Website**: [Maryna.Lysevych.net](https://Maryna.Lysevych.net)  
+**Website**: [Maryna.Lysevych.net](https://Maryna.Lysevych.net/)  
 **Author**: Lysevych Oleksandr  
 **Theme**: Personal Web Card  
 **Repository**: [`Maryna.Lysevych.net`](https://GitHub.com/Lysevych/Maryna.Lysevych.net)
@@ -27,7 +27,7 @@ The site is built as a minimalist one-page web card with a focus on mobile acces
 
 ## Preview
 
-Live site: [https://Maryna.Lysevych.net](https://Maryna.Lysevych.net)
+Live site: [Maryna.Lysevych.net](https://Maryna.Lysevych.net/)
 
 ---
 
@@ -50,8 +50,8 @@ Live site: [https://Maryna.Lysevych.net](https://Maryna.Lysevych.net)
 
 ## Development & Maintenance
 
-Developed by [Lysevych Oleksandr](https://Lysevych.net)
-In close and direct collaboration with [ChatGPT](https://ChatGPT.com).  
+Developed by [Lysevych Oleksandr](https://Lysevych.net/)
+In close and direct collaboration with [ChatGPT](https://ChatGPT.com/).  
 Suggestions and ideas are welcome via [Issues](https://github.com/Lysevych/Lysevych/issues).
 
 ---
