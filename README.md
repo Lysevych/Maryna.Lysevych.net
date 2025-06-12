@@ -1,8 +1,8 @@
-# Maryna Lysevych — Personal Website
+# Maryna Lysevych — personal website
 
 **Website**: [Maryna.Lysevych.net](https://Maryna.Lysevych.net/)  
 **Author**: Lysevych Oleksandr  
-**Theme**: Personal Web Card  
+**Theme**: Personal web card  
 **Repository**: [`Maryna.Lysevych.net`](https://GitHub.com/Lysevych/Maryna.Lysevych.net)
 
 ---
