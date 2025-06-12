@@ -65,5 +65,5 @@ This project is not open-source and is intended solely for personal use and pres
 
 ## Credits
 
-Visual identity, logo, and concept — by Lysevych Oleksandr.  
-Technical implementation — by ChatGPT.
+Visual identity, logo, and concept — by [Lysevych Oleksandr](https://Lysevych.net/).  
+Technical implementation — by [ChatGPT](https://ChatGPT.com/).
