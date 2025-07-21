@@ -47,8 +47,8 @@
 	<style>
 		html,
 		body {
-			margin: 0;
-			padding: 0;
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
 			height: 100vh;
 			width: 100vw;
 			background-color: white;
@@ -108,12 +108,11 @@
 			transition: opacity 1s ease;
 			user-select: none;
 			z-index: 10;
-			visibility: visible;
 		}
 
 		.tooltip-text-main.visible {
 			opacity: 1;
-			pointer-events: auto;
+			pointer-events: none;
 		}
 
 		.social-container {
@@ -214,7 +213,6 @@
 		document.addEventListener('copy', e => e.preventDefault());
 		document.addEventListener('selectstart', e => e.preventDefault());
 		document.addEventListener('dragstart', e => e.preventDefault());
-		// Fixed: Added missing variable declarations
 		const tooltipTrigger = document.querySelector('.center-image');
 		const tooltip = document.getElementById('tooltip');
 		const socialLinks = document.querySelectorAll('.social-container a');
