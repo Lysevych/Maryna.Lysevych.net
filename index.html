@@ -57,6 +57,13 @@
 			align-items: center;
 			overflow: hidden;
 			font-family: Helvetica, Arial, Sans-Serif;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+		}
+
+		* {
+			-webkit-user-drag: none;
 		}
 
 		.tooltip {
@@ -203,9 +210,10 @@
 	</div>
 
 	<script>
-		const tooltip = document.getElementById('tooltip');
-		const tooltipTrigger = document.querySelector('.tooltip');
-		const socialLinks = document.querySelectorAll('.social-container a');
+		document.addEventListener('contextmenu', e => e.preventDefault());
+		document.addEventListener('copy', e => e.preventDefault());
+		document.addEventListener('selectstart', e => e.preventDefault());
+		document.addEventListener('dragstart', e => e.preventDefault());
 		let tooltipVisible = false;
 		let tooltipTimer;
 		let socialTooltipTimer;
