@@ -101,7 +101,7 @@
 			text-align: center;
 			white-space: nowrap;
 			text-shadow: 0px 0px 10px #ffffff;
-			padding: 10px 10px;
+			padding: 10px 20px 10px 20px;
 			border-radius: 10px;
 			opacity: 0;
 			pointer-events: none;
@@ -155,7 +155,7 @@
 			text-align: center;
 			white-space: nowrap;
 			text-shadow: 0px 0px 10px #ffffff;
-			padding: 10px 10px;
+			padding: 10px 10px 10px 10px;
 			border-radius: 10px;
 			opacity: 0;
 			transition: opacity 1s ease;
@@ -214,6 +214,10 @@
 		document.addEventListener('copy', e => e.preventDefault());
 		document.addEventListener('selectstart', e => e.preventDefault());
 		document.addEventListener('dragstart', e => e.preventDefault());
+		// Fixed: Added missing variable declarations
+		const tooltipTrigger = document.querySelector('.center-image');
+		const tooltip = document.getElementById('tooltip');
+		const socialLinks = document.querySelectorAll('.social-container a');
 		let tooltipVisible = false;
 		let tooltipTimer;
 		let socialTooltipTimer;
